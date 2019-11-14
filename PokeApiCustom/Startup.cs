@@ -31,7 +31,7 @@ namespace PokeApiCustom {
             // Cache Redis
             services.AddDistributedRedisCache(options => {
                 options.Configuration = Configuration.GetConnectionString("RedisConnection");
-                options.InstanceName = "TestRedis:";
+                //options.InstanceName = "PokeApi:";
             });
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
