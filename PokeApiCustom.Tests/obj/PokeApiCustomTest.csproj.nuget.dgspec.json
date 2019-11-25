@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom\\PokeApiCustom.csproj": {}
+    "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustomTest\\PokeApiCustomTest.csproj": {}
   },
   "projects": {
-    "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom\\PokeApiCustom.csproj": {
+    "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustomTest\\PokeApiCustomTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom\\PokeApiCustom.csproj",
-        "projectName": "PokeApiCustom",
-        "projectPath": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom\\PokeApiCustom.csproj",
+        "projectUniqueName": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustomTest\\PokeApiCustomTest.csproj",
+        "projectName": "PokeApiCustomTest",
+        "projectPath": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustomTest\\PokeApiCustomTest.csproj",
         "packagesPath": "C:\\Users\\BMXDDT006486\\.nuget\\packages\\",
-        "outputPath": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom\\obj\\",
+        "outputPath": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustomTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -21,7 +21,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.0"
+          "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,7 +30,7 @@
           "https://drakkarsbestday.pkgs.visualstudio.com/_packaging/NeoFramework/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.0": {
+          "netcoreapp2.2": {
             "projectReferences": {}
           }
         },
@@ -41,36 +41,32 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "netcoreapp2.2": {
           "dependencies": {
-            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[16.4.0, )"
             },
-            "Microsoft.Extensions.Caching.Redis": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }
