@@ -5,6 +5,6 @@ using PokeApiCustom.Models;
 namespace PokeApiCustom.Repositories {
     
     public interface IPokemonRepository {
-        Task<List<Pokemon>> GetPokemonList();
+        Task<List<Pokemon>> GetPokemonListAsync();
     }
 }

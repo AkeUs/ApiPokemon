@@ -10,7 +10,7 @@
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
-      "netcoreapp2.2"
+      "netcoreapp3.0"
     ],
     "sources": {
       "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -19,7 +19,7 @@
       "https://drakkarsbestday.pkgs.visualstudio.com/_packaging/NeoFramework/nuget/v3/index.json": {}
     },
     "frameworks": {
-      "netcoreapp2.2": {
+      "netcoreapp3.0": {
         "projectReferences": {
           "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom\\PokeApiCustom.csproj": {
             "projectPath": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom\\PokeApiCustom.csproj"
@@ -34,21 +34,11 @@
     }
   },
   "frameworks": {
-    "netcoreapp2.2": {
+    "netcoreapp3.0": {
       "dependencies": {
-        "Microsoft.AspNetCore.App": {
-          "target": "Package",
-          "version": "[2.2.0, )"
-        },
         "Microsoft.NET.Test.Sdk": {
           "target": "Package",
           "version": "[16.4.0, )"
-        },
-        "Microsoft.NETCore.App": {
-          "suppressParent": "All",
-          "target": "Package",
-          "version": "[2.2.0, )",
-          "autoReferenced": true
         },
         "Moq": {
           "target": "Package",

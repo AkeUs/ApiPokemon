@@ -18,7 +18,7 @@ namespace PokeApiCustom.Controllers {
         
         [HttpGet]
         public async Task<ActionResult<List<Pokemon>>> Get() {
-            List<Pokemon> pokemonList = await _pokemonRepository.GetPokemonList();
+            List<Pokemon> pokemonList = await _pokemonRepository.GetPokemonListAsync();
             if (pokemonList is null) return NotFound();
             return Ok(pokemonList);
         }
