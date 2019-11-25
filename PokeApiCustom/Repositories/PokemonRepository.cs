@@ -21,7 +21,7 @@ namespace PokeApiCustom.Repositories {
             _cache = cache;
         }
         
-        public async Task<List<Pokemon>> GetPokemonList() {
+        public async Task<List<Pokemon>> GetPokemonListAsync() {
             var dataCache = await _cache.GetStringAsync(KeyPokemonList);
 
             if (!string.IsNullOrWhiteSpace(dataCache)) return JsonConvert.DeserializeObject<List<Pokemon>>(dataCache);

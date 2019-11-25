@@ -1,0 +1,68 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom.Tests\\PokeApiCustom.Tests.csproj",
+    "projectName": "PokeApiCustom.Tests",
+    "projectPath": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom.Tests\\PokeApiCustom.Tests.csproj",
+    "outputPath": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom.Tests\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp3.0"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {},
+      "https://bestdayit.pkgs.visualstudio.com/_packaging/common@Local/nuget/v3/index.json": {},
+      "https://drakkarsbestday.pkgs.visualstudio.com/_packaging/NeoFramework/nuget/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "projectReferences": {
+          "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom\\PokeApiCustom.csproj": {
+            "projectPath": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom\\PokeApiCustom.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.0": {
+      "dependencies": {
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "[16.4.0, )"
+        },
+        "Moq": {
+          "target": "Package",
+          "version": "[4.13.1, )"
+        },
+        "xunit": {
+          "target": "Package",
+          "version": "[2.4.1, )"
+        },
+        "xunit.runner.visualstudio": {
+          "target": "Package",
+          "version": "[2.4.1, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
