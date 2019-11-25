@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustomTest\\PokeApiCustomTest.csproj",
-    "projectName": "PokeApiCustomTest",
-    "projectPath": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustomTest\\PokeApiCustomTest.csproj",
-    "outputPath": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustomTest\\obj\\",
+    "projectUniqueName": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom.Tests\\PokeApiCustom.Tests.csproj",
+    "projectName": "PokeApiCustom.Tests",
+    "projectPath": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom.Tests\\PokeApiCustom.Tests.csproj",
+    "outputPath": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom.Tests\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -20,7 +20,11 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
-        "projectReferences": {}
+        "projectReferences": {
+          "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom\\PokeApiCustom.csproj": {
+            "projectPath": "E:\\Ejemplos\\Back-End\\NetCore\\PokeApiCustom\\PokeApiCustom\\PokeApiCustom.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -32,6 +36,10 @@
   "frameworks": {
     "netcoreapp2.2": {
       "dependencies": {
+        "Microsoft.AspNetCore.App": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
         "Microsoft.NET.Test.Sdk": {
           "target": "Package",
           "version": "[16.4.0, )"
@@ -41,6 +49,10 @@
           "target": "Package",
           "version": "[2.2.0, )",
           "autoReferenced": true
+        },
+        "Moq": {
+          "target": "Package",
+          "version": "[4.13.1, )"
         },
         "xunit": {
           "target": "Package",
@@ -52,7 +64,12 @@
         }
       },
       "imports": [
-        "net461"
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
       ],
       "assetTargetFallback": true,
       "warn": true
