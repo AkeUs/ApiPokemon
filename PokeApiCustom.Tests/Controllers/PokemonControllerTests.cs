@@ -14,23 +14,24 @@ namespace PokeApiCustom.Tests.Controllers {
         [Fact]
         public async Task Get_ListPokemon_ReturnList() {
             var pokemonRepositoryMock = new Mock<IPokemonRepository>();
-            var pokemonList = new List<Pokemon>();
-            
-            pokemonList.Add(new Pokemon {
-                Id = 1,
-                Name = "Bulbasaur",
-                TypeOne = "Grass",
-                TypeTwo = "Poison",
-                UrlImage = "http://bulbasaur.png"
-            });
-            pokemonList.Add(new Pokemon {
-                Id = 2,
-                Name = "Venusaur",
-                TypeOne = "Grass",
-                TypeTwo = "Poison",
-                UrlImage = "http://venusaur.png"
-            });
-            
+            var pokemonList = new List<Pokemon> {
+                new Pokemon {
+                    Id = 1,
+                    Name = "Bulbasaur",
+                    TypeOne = "Grass",
+                    TypeTwo = "Poison",
+                    UrlImage = "http://bulbasaur.png"
+                },
+                new Pokemon {
+                    Id = 2,
+                    Name = "Venusaur",
+                    TypeOne = "Grass",
+                    TypeTwo = "Poison",
+                    UrlImage = "http://venusaur.png"
+                }
+            };
+
+
             pokemonRepositoryMock.Setup(x => x.GetPokemonListAsync()).Returns(Task.FromResult(pokemonList));
             
             var pokemonController = new PokemonController(pokemonRepositoryMock.Object);
