@@ -31,7 +31,8 @@ namespace PokeApiCustom {
             
             // Cache Redis
             services.AddDistributedRedisCache(options => {
-                options.Configuration = Configuration.GetConnectionString("RedisConnection");
+                //options.Configuration = Configuration.GetConnectionString("RedisConnection");
+                options.Configuration = $"{Environment.GetEnvironmentVariable("REDIS_HOST")}:{Environment.GetEnvironmentVariable("REDIS_PORT")}";
                 //options.InstanceName = "PokeApi:";
             });
             

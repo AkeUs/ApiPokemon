@@ -9,7 +9,7 @@ COPY ["PokeApiCustom/PokeApiCustom.csproj", "PokeApiCustom/"]
 RUN dotnet restore "PokeApiCustom/PokeApiCustom.csproj"
 COPY . .
 WORKDIR "/src/PokeApiCustom"
-RUN dotnet build "PokeApiCustom.csproj" -c Release -o /app
+RUN dotnet build "PokeApiCustom.csproj" -c Release -o /build
 
 FROM build AS publish
 RUN dotnet publish "PokeApiCustom.csproj" -c Release -o /app

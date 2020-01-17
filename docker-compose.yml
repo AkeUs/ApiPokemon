@@ -6,6 +6,8 @@ services:
     build: .
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      REDIS_HOST: cache
+      REDIS_PORT: 6379
     ports:
       - "5000:80"
     networks:
