@@ -1,7 +1,8 @@
 .git
 .idea
-
 .gitignore
 .dockerignore
 
+PokeApiCustom.Tests
 docker-compose.yml
+README.md
