@@ -1,0 +1,22 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: custom-pokeapi
+  name: pokeapi-cache
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pokeapi-cache
+  template:
+    metadata:
+      labels:
+        app: pokeapi-cache
+    spec:
+      containers:
+        - name: redis-cache
+          image: redis:5-alpine
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 6379
+    

@@ -1,0 +1,32 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: custom-pokeapi
+  name: pokeapi-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pokeapi-app
+  template:
+    metadata:
+      labels:
+        app: pokeapi-app
+    spec:
+      containers:
+        - name: pokeapi
+          image: miguelake/pokeapi:1.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+            - name: https
+              containerPort: 443
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: "Develop"
+            - name: REDIS_HOST
+              value: "service-cache"
+            - name: REDIS_PORT
+              value: "6379"
+    

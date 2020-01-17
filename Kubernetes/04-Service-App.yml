@@ -1,0 +1,15 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  namespace: custom-pokeapi
+  name: service-app
+spec:
+  selector:
+    app: pokeapi-app
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+      name: http
+      nodePort: 30000
