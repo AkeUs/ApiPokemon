@@ -3,7 +3,7 @@ version: "3"
 services:
   apipokemon:
     container_name: api_pokemon
-    image: miguelake/pokeapi:1.0
+    image: akeus/pokeapi:1.0
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       REDIS_HOST: cache

@@ -3,6 +3,7 @@
 .gitignore
 .dockerignore
 
+Kubernetes
 PokeApiCustom.Tests
 docker-compose.yml
 README.md
