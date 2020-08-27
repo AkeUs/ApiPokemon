@@ -1,25 +1,35 @@
 version: "3"
 
 services:
-  apipokemon:
-    container_name: api_pokemon
+  pokemon-api:
     image: akeus/pokeapi:1.0
+    container_name: pokeapi-app
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      REDIS_HOST: cache
+      REDIS_HOST: redis
       REDIS_PORT: 6379
     ports:
       - "5000:80"
     networks:
       - net
     depends_on:
-      - cache
+      - redis
   
-  cache:
-    container_name: api_cache
+  redis:
     image: redis:5-alpine
+    container_name: redis-server
     networks:
       - net
+
+  redis-ui:
+    image: marian/rebrow
+    container_name: rebrow-server
+    ports: 
+      - "5001:5001"
+    networks: 
+      - net
+    depends_on:
+      - redis
 
 networks:
   net:
